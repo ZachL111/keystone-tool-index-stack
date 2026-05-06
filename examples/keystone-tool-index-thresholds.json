@@ -1,0 +1,17 @@
+{
+  "repo": "keystone-tool-index-stack",
+  "thresholds": {
+    "signal": 2,
+    "slack": 1,
+    "confidence": 2,
+    "drag": 4,
+    "ship": 169,
+    "watch": 109
+  },
+  "terms": [
+    "file span",
+    "terminal width",
+    "argument risk",
+    "report density"
+  ]
+}
