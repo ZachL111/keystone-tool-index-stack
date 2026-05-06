@@ -1,0 +1,6 @@
+name,focus,signal,slack,drag,confidence,score,lane
+baseline,file span,47,51,21,76,158,ship
+stress,terminal width,79,30,20,90,218,ship
+edge,argument risk,60,29,31,93,149,ship
+recovery,report density,86,53,31,82,214,ship
+stale,file span,61,46,23,91,190,ship

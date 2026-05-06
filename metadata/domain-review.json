@@ -1,0 +1,73 @@
+{
+  "repo": "keystone-tool-index-stack",
+  "language": "Python",
+  "category": "CLI tools",
+  "goal": "Package a Python local lab for index analysis with safe and unsafe fixtures, remediation hints, and documented operating limits.",
+  "review_model": {
+    "terms": [
+      "file span",
+      "terminal width",
+      "argument risk",
+      "report density"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "file span",
+      "signal": 47,
+      "slack": 51,
+      "drag": 21,
+      "confidence": 76,
+      "score": 158,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "terminal width",
+      "signal": 79,
+      "slack": 30,
+      "drag": 20,
+      "confidence": 90,
+      "score": 218,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "argument risk",
+      "signal": 60,
+      "slack": 29,
+      "drag": 31,
+      "confidence": 93,
+      "score": 149,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "report density",
+      "signal": 86,
+      "slack": 53,
+      "drag": 31,
+      "confidence": 82,
+      "score": 214,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "file span",
+      "signal": 61,
+      "slack": 46,
+      "drag": 23,
+      "confidence": 91,
+      "score": 190,
+      "lane": "ship"
+    }
+  ]
+}
